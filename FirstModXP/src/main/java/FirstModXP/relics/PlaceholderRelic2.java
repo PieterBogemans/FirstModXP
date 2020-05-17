@@ -6,11 +6,10 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import FirstModXP.DefaultMod;
+import FirstModXP.FirstModXp;
 import FirstModXP.util.TextureLoader;
-
-import static FirstModXP.DefaultMod.makeRelicOutlinePath;
-import static FirstModXP.DefaultMod.makeRelicPath;
+import static FirstModXP.Service.PathService.makeRelicOutlinePath;
+import static FirstModXP.Service.PathService.makeRelicPath;
 
 public class PlaceholderRelic2 extends CustomRelic {
     /*
@@ -20,7 +19,7 @@ public class PlaceholderRelic2 extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("PlaceholderRelic2");
+    public static final String ID = FirstModXp.makeID("PlaceholderRelic2");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic2.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic2.png"));

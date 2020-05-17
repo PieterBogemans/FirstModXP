@@ -1,5 +1,6 @@
 package FirstModXP.potions;
 
+import FirstModXP.FirstModXp;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -14,7 +15,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 public class PlaceholderPotion extends AbstractPotion {
 
 
-    public static final String POTION_ID = FirstModXP.DefaultMod.makeID("PlaceholderPotion");
+    public static final String POTION_ID = FirstModXp.makeID("PlaceholderPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

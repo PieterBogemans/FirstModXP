@@ -7,10 +7,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import FirstModXP.DefaultMod;
+import FirstModXP.FirstModXp;
 import FirstModXP.characters.TheDefault;
 
-import static FirstModXP.DefaultMod.makeCardPath;
+import static FirstModXP.Service.PathService.makeCardPath;
 
 public class DefaultAttackWithVariable extends AbstractDynamicCard {
 
@@ -22,7 +22,7 @@ public class DefaultAttackWithVariable extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(DefaultAttackWithVariable.class.getSimpleName());
+    public static final String ID = FirstModXp.makeID(DefaultAttackWithVariable.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     // /TEXT DECLARATION/

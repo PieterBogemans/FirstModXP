@@ -13,14 +13,14 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
-import FirstModXP.DefaultMod;
+import FirstModXP.FirstModXp;
 
-import static FirstModXP.DefaultMod.makeEventPath;
+import static FirstModXP.Service.PathService.makeEventPath;
 
 public class IdentityCrisisEvent extends AbstractImageEvent {
 
 
-    public static final String ID = DefaultMod.makeID("IdentityCrisisEvent");
+    public static final String ID = FirstModXp.makeID("IdentityCrisisEvent");
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(ID);
 
     private static final String NAME = eventStrings.NAME;

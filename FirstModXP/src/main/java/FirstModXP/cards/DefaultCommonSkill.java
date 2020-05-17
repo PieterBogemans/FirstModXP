@@ -5,10 +5,10 @@ import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import FirstModXP.DefaultMod;
+import FirstModXP.FirstModXp;
 import FirstModXP.characters.TheDefault;
 
-import static FirstModXP.DefaultMod.makeCardPath;
+import static FirstModXP.Service.PathService.makeCardPath;
 
 public class DefaultCommonSkill extends AbstractDynamicCard {
 
@@ -21,7 +21,7 @@ public class DefaultCommonSkill extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(DefaultCommonSkill.class.getSimpleName());
+    public static final String ID = FirstModXp.makeID(DefaultCommonSkill.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill.png");
 
     // /TEXT DECLARATION/

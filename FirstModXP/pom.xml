@@ -6,7 +6,7 @@
     <groupId>Crow</groupId>
     <artifactId>FirstModXP</artifactId>
     <name>FirstModXP</name>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <description>My first mod </description>
 
     <properties>

@@ -6,11 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import FirstModXP.DefaultMod;
+import FirstModXP.FirstModXp;
 import FirstModXP.characters.TheDefault;
 import FirstModXP.orbs.DefaultOrb;
 
-import static FirstModXP.DefaultMod.makeCardPath;
+import static FirstModXP.Service.PathService.makeCardPath;
 
 public class OrbSkill extends AbstractDynamicCard {
 
@@ -22,7 +22,7 @@ public class OrbSkill extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(OrbSkill.class.getSimpleName());
+    public static final String ID = FirstModXp.makeID(OrbSkill.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Skill.png");

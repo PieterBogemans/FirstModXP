@@ -3,11 +3,11 @@ package FirstModXP.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import FirstModXP.DefaultMod;
+import FirstModXP.FirstModXp;
 import FirstModXP.util.TextureLoader;
 
-import static FirstModXP.DefaultMod.makeRelicOutlinePath;
-import static FirstModXP.DefaultMod.makeRelicPath;
+import static FirstModXP.Service.PathService.makeRelicOutlinePath;
+import static FirstModXP.Service.PathService.makeRelicPath;
 
 public class PlaceholderRelic extends CustomRelic {
 
@@ -18,7 +18,7 @@ public class PlaceholderRelic extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("PlaceholderRelic");
+    public static final String ID = FirstModXp.makeID("PlaceholderRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));

@@ -11,7 +11,7 @@
   ],
   "skins": {
     "default": {
-      "FuzzyDie": { "FuzzyDie": {
+      "DbGenie": { "DbGenie": {
         "x": 0, "y": 0, "width": 270, "height": 270,
         "type": "mesh",
         "vertices": [

@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.powers.AngerPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class DbGenie extends AbstractMonster {
-    public static final String ID = "GremlinNob";
+    public static final String ID = "firstModXP:DbGenie";
     private static final MonsterStrings monsterStrings;
     public static final String NAME;
     public static final String[] MOVES;
@@ -71,7 +71,7 @@ public class DbGenie extends AbstractMonster {
 
         this.damage.add(new DamageInfo(this, this.rushDmg));
         this.damage.add(new DamageInfo(this, this.bashDmg));
-        this.loadAnimation("images/monsters/theBottom/nobGremlin/skeleton.atlas", "images/monsters/theBottom/nobGremlin/skeleton.json", 1.0F);
+        this.loadAnimation("images/monsters/dbGenie/skeleton.atlas", "images/monsters/dbGenie/skeleton.json", 1.0F);
         TrackEntry e = this.state.setAnimation(0, "animation", true);
         e.setTime(e.getEndTime() * MathUtils.random());
     }
@@ -165,7 +165,7 @@ public class DbGenie extends AbstractMonster {
     }
 
     static {
-        monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("GremlinNob");
+        monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("DbGenie");
         NAME = monsterStrings.NAME;
         MOVES = monsterStrings.MOVES;
         DIALOG = monsterStrings.DIALOG;
